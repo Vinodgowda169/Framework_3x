@@ -239,6 +239,7 @@ public class GenericSeleniumActions extends Driver {
 	public boolean waitTillElementPresent(String locator, String value, String stepDescription) {
 		boolean status = false;
 		try {
+			System.out.println("");
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.valueOf(Driver.MaxTime)));
 
 			if (locator.equalsIgnoreCase("xpath")) {
