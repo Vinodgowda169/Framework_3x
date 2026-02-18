@@ -172,12 +172,12 @@ public class Utils {
 			XSSFSheet sheet = wb.getSheetAt(0);
 
 			LinkedHashMap<String, String> li = new LinkedHashMap<String, String>();
-			for (int i1 = 1; i1 < sheet.getLastRowNum(); i1++) {
+			for (int i1 = 1; i1 < sheet.getPhysicalNumberOfRows(); i1++) {
 
 				List<Map<String, String>> s = new java.util.LinkedList<Map<String, String>>();
 				String ScenarioName = sheet.getRow(i1).getCell(0).getStringCellValue();
 				if (!ScenarioName.isEmpty()) {
-					for (int k = 1; k < sheet.getLastRowNum(); k++) {
+					for (int k = 1; k < sheet.getPhysicalNumberOfRows(); k++) {
 
 						String ScenarioName1 = sheet.getRow(k).getCell(1).getStringCellValue();
 						String headernameName = sheet.getRow(k).getCell(0).getStringCellValue();
@@ -342,7 +342,7 @@ public class Utils {
 			XSSFWorkbook wb = new XSSFWorkbook(fio);
            String data="";
 			XSSFSheet sheet = wb.getSheetAt(0);
-			for (int j = 1; j < sheet.getLastRowNum(); j++) {
+			for (int j = 1; j <sheet.getPhysicalNumberOfRows(); j++) {
 				String scenario = "";
 				try {
 					scenario = sheet.getRow(j).getCell(0).getStringCellValue();
@@ -352,7 +352,7 @@ public class Utils {
 				}
 				LinkedHashMap<String, String> li = new LinkedHashMap<String, String>();
 				if ((!scenario.isEmpty()||data.equalsIgnoreCase(""))&&(!data.equalsIgnoreCase(scenario))) {
-					for (int i = 1; i < sheet.getLastRowNum(); i++) {
+					for (int i = 1; i < sheet.getPhysicalNumberOfRows(); i++) {
 						String scenarios = sheet.getRow(i).getCell(0).getStringCellValue();
 						if (scenarios.equalsIgnoreCase(scenario)) {
 							String Key = sheet.getRow(i).getCell(1).getStringCellValue();

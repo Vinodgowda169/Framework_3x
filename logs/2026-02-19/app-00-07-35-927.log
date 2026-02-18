@@ -1,0 +1,18 @@
+2026-02-19 00:08:00.484 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: launch&login_userName
+2026-02-19 00:08:02.599 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: launch&login_password
+2026-02-19 00:08:13.414 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Rahul: addEmployeeData_empFirstName
+2026-02-19 00:08:14.320 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered A: addEmployeeData_empMiddleName
+2026-02-19 00:08:15.195 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Kohli: addEmployeeData_empLastName
+2026-02-19 00:08:16.040 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered EMP123: addEmployeeData_empID
+2026-02-19 00:08:27.747 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: login_userName
+2026-02-19 00:08:28.535 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: login_password
+2026-02-19 00:08:43.692 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test Automation Engineer X: addJobVacancy_vacancyName
+2026-02-19 00:08:45.714 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test Description: addJobVacancy_description
+2026-02-19 00:08:57.176 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered 3: addJobVacancy_noOfPositions
+2026-02-19 00:09:15.438 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: login_userName
+2026-02-19 00:09:16.032 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: login_password
+2026-02-19 00:09:39.890 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Virat: addCandidateData_firstName
+2026-02-19 00:09:40.652 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Kohli: addCandidateData_lastName
+2026-02-19 00:09:42.821 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered abc@gmail.com: addCandidateData_email
+2026-02-19 00:09:43.605 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered 9916123123: addCandidateData_contactNo
+2026-02-19 00:09:44.397 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test note: addCandidateData_notes

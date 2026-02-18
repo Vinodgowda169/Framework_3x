@@ -1,0 +1,46 @@
+2026-02-19 00:21:11.912 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully launched https://opensource-demo.orangehrmlive.com/web/index.php/auth/login 
+2026-02-19 00:21:16.042 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: launch&login_userName
+2026-02-19 00:21:17.083 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: launch&login_password
+2026-02-19 00:21:17.746 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: launch&login_ClickloginButton
+2026-02-19 00:21:22.019 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addEmployeeData_ClickPIM
+2026-02-19 00:21:24.393 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addEmployeeData_ClickAddEmployee
+2026-02-19 00:21:26.092 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Rahul: addEmployeeData_empFirstName
+2026-02-19 00:21:27.050 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered A: addEmployeeData_empMiddleName
+2026-02-19 00:21:27.817 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Kohli: addEmployeeData_empLastName
+2026-02-19 00:21:28.478 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered EMP123: addEmployeeData_empID
+2026-02-19 00:21:28.977 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addEmployeeData_empSaveButton
+2026-02-19 00:21:36.513 [main] INFO  com.frameWork.GenericSeleniumActions - Exist: addEmployeeData_validateEmployeeCreation
+2026-02-19 00:21:37.040 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickUserIcon
+2026-02-19 00:21:38.611 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickLogout
+2026-02-19 00:21:39.550 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: login_userName
+2026-02-19 00:21:40.113 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: login_password
+2026-02-19 00:21:40.566 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: login_ClickloginButton
+2026-02-19 00:21:44.615 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addJobVacancy_ClickRecruitment
+2026-02-19 00:21:46.765 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addJobVacancy_ClickVacancies
+2026-02-19 00:21:48.629 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addJobVacancy_ClickAddVacancy
+2026-02-19 00:21:49.992 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test Automation Engineer IX: addJobVacancy_vacancyName
+2026-02-19 00:21:50.497 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addJobVacancy_ClickJobTitleDropdown
+2026-02-19 00:21:50.976 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfuly Clicked on: addJobVacancy_ClickJobTitleOption
+2026-02-19 00:21:51.649 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test Description: addJobVacancy_description
+2026-02-19 00:22:02.585 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered a: addJobVacancy_hiringManager
+2026-02-19 00:22:03.011 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered 3: addJobVacancy_noOfPositions
+2026-02-19 00:22:03.460 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addJobVacancy_saveVacancyButton
+2026-02-19 00:22:07.335 [main] INFO  com.frameWork.GenericSeleniumActions - Exist: addJobVacancy_validateVacancyCreation
+2026-02-19 00:22:07.804 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickUserIcon
+2026-02-19 00:22:09.538 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickLogout
+2026-02-19 00:22:10.524 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Admin: login_userName
+2026-02-19 00:22:11.061 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered ********: login_password
+2026-02-19 00:22:11.515 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: login_ClickloginButton
+2026-02-19 00:22:16.729 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addCandidateData_ClickRecruitment
+2026-02-19 00:22:19.031 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addCandidateData_ClickAddCandidate
+2026-02-19 00:22:20.197 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Virat: addCandidateData_firstName
+2026-02-19 00:22:20.810 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Kohli: addCandidateData_lastName
+2026-02-19 00:22:21.276 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addCandidateData_ClickVacancy
+2026-02-19 00:22:21.730 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfuly Clicked on: addCandidateData_ClickVacancyOption
+2026-02-19 00:22:22.272 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered abc@gmail.com: addCandidateData_email
+2026-02-19 00:22:22.808 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered 9916123123: addCandidateData_contactNo
+2026-02-19 00:22:23.303 [main] INFO  com.frameWork.GenericSeleniumActions - Successfully entered Test note: addCandidateData_notes
+2026-02-19 00:22:23.755 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: addCandidateData_ClickCandidateSaveButton
+2026-02-19 00:22:29.032 [main] INFO  com.frameWork.GenericSeleniumActions - Exist: addCandidateData_validateCandidateStatus
+2026-02-19 00:22:29.627 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickUserIcon
+2026-02-19 00:22:31.371 [main] INFO  com.frameWork.GenericSeleniumActions - Sucessfully Clicked on: logout_ClickLogout

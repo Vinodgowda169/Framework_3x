@@ -15,7 +15,7 @@ public class Controler extends Driver {
 
 	public static GenericSeleniumActions gsa;
 	public static ExtentTestManager ExtentTestManager;
-	public static com.frameWork.OrangeHrm OrangeHrm;
+	
 	public static Map<String, String> result = new LinkedHashMap<>();
 
 	public static Utils utils;
@@ -29,7 +29,7 @@ public class Controler extends Driver {
 		ExtentManager = new ExtentManager();
 		gsa = new GenericSeleniumActions();
 		utils = new Utils();
-		OrangeHrm = new OrangeHrm();
+		
 
 	}
 
@@ -44,10 +44,10 @@ for(Entry<String, String> Scenariomap:scenarioMap.entrySet())
 	boolean statuskey=true;
 	String scenarioKey=Scenariomap.getKey();
 	String value=scenarioMap.get(scenarioKey);
-	 ExtentTestManager. startTestDetailed(scenarioKey+": Feature started");
+	 
 	if(value.equalsIgnoreCase("Y")||value.equalsIgnoreCase("Yes"))
 	{
-		
+		ExtentTestManager. startTestDetailed(scenarioKey+": Feature started");
 		for( Entry<String, LinkedHashMap<String, String>> testsCaseMap:testCaseMap.entrySet())
 		{
 			LinkedHashMap<String, String> testCaseList=testCaseMap.get(scenarioKey);
@@ -98,13 +98,14 @@ for(Entry<String, String> Scenariomap:scenarioMap.entrySet())
 												
 												 if(!gsa.launchApplication(mp.get("Url").toString()))
 												 {
+													 
 														gsa.logout("Logout Button");
 														statuskey= false;
 													}
 											}
 											if(testStepKey.equalsIgnoreCase("enterText"))
 											{
-												if(!gsa.enterText("xpath",webElemets.get(testStepValue.split("_")[0].toString()) ,mp.get(testStepValue.split("_")[0].toString()),keyMapList+"_"+testStepValue.split("_")[0].toString()))
+												if(!gsa.enterText("xpath",webElemets.get(testStepValue.split("_")[0].toString()) ,mp.get(testStepValue.split("_")[0].toString()),keyMapList+"_"+testStepValue.split("_")[0].toString(),testStepValue.split("_")[0].toString()))
 												{
 													gsa.logout("Logout Button");
 													statuskey= false;
@@ -140,82 +141,50 @@ for(Entry<String, String> Scenariomap:scenarioMap.entrySet())
 											}
 											
 											
+											if(testStepKey.equalsIgnoreCase("exist"))
+											{
+												if(!gsa.exist("xpath",webElemets.get(testStepValue.split("_")[0].toString()),keyMapList+"_"+testStepValue.split("_")[0].toString()))
+												{
+													gsa.logout("Logout Button");
+													statuskey= false;
+												}
+												
+											}
 											
+											
+											
+											if(testStepKey.equalsIgnoreCase("enterTextKeyboardAction"))
+											{
+												if(!gsa.enterTextKeyboardAction("xpath",webElemets.get(testStepValue.split("_")[0].toString()) ,mp.get(testStepValue.split("_")[0].toString()),keyMapList+"_"+testStepValue.split("_")[0].toString()))
+												{
+													gsa.logout("Logout Button");
+													statuskey= false;
+												}
+											}
 											break;
-											
-											
-											
 										}
 										}
 									
 								}
+										
 								
-								
-								
-								
-								
-							}
-						
-							
-							
-						}
-						
-						
-						
-						
+							}						
+						}			
 						
 					}
-					
-					
-					
+							
 					break;
-					
-					
-					
-					
-				}
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			}
-				
-			
-				
+				}			
+			}	
 			}
 			
 			
 			break;
 		}
 		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
 }
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+						
 			status = true;
 		} catch (Exception e) {
 			e.printStackTrace();

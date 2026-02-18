@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- You can override LOG_BASE_DIR at runtime with: -DLOG_BASE_DIR=/path/to/logs -->
+    <Properties>
+        <Property name="logBaseDir">${sys:LOG_BASE_DIR:-logs}</Property>
+        <Property name="dateFolder">${date:yyyy-MM-dd}</Property>
+        <Property name="runTs">${date:HH-mm-ss-SSS}</Property>
+        <Property name="logFileName">app-${runTs}.log</Property>
+        <Property name="logPath">${logBaseDir}/${dateFolder}/${logFileName}</Property>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}"/>
+        </Console>
+
+        <!-- One unique file per execution -->
+        <File name="File"
+              fileName="${logPath}"
+              append="true"
+              createOnDemand="true">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>

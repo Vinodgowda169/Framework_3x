@@ -29,9 +29,9 @@ public class ExtentManager {
 			extentDetailed.setSystemInfo("OS", System.getProperty("os.name"));
 			extentDetailed.setSystemInfo("Java Version", System.getProperty("java.version"));
 			extentDetailed.setSystemInfo("Execution Type", "Local Machine");
-			extentDetailed.setSystemInfo("Browser Type", GlobalVariables.browserType);
+			extentDetailed.setSystemInfo("Browser Type", "Chrome");
 			extentDetailed.setSystemInfo("Executed By", "Vinod");
-			extentDetailed.setSystemInfo("Overall Status", "QA");
+			extentDetailed.setSystemInfo("Overall Status", "");
 		}
 		else
 		{
